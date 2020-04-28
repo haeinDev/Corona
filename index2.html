@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API 연습</title>
+</head>
+
+<body>
+    <h1>책 제목을 검색해주세요.</h1>
+    <input id="bookName" type="text">
+    <button id="search">검색</button>
+    <p></p>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+
+            $("#search").click(function () {
+
+                $.ajax({
+                    method: "GET",
+                    url : 'http://deveire.staging.franchisedirect.com/adminReports/data/clientOverviewFilterService',
+                    data: { query: $("#bookName").val() }, // 보낼 데이터
+                    headers: { Authorization: "KakaoAK kkkkkkkkkkkkkkkkkkkkkkkk" }
+                })
+                    .done(function (msg) { // 응답이 오면 처리를 하는 코드
+                        console.log(msg);
+                    });
+            })
+        });
+
+    </script>
+    	<footer class="footer">
+            <div class="container">
+                <span class="text-muted">&copy; 2020 Apple book store Ltd. 2017133 Haein Kim| https://github.com/Haein2017133cct/IWA-Bookstore-Angular</span>
+            </div>
+        </footer>
+</body>
+
+</html>
