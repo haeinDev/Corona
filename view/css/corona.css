@@ -1,0 +1,45 @@
+
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+   
+    html, body {height:100%; width:100%; padding:0px; margin:0px;  position: fixed; overflow: hidden;}
+    div.absolute { 
+        position: absolute;
+        top : 15%;
+        left : 25%;
+        right : 25%;
+        width : 100%;
+        z-index:6
+    }
+    .yellow_search {
+	display: inline-block;
+	width: 45%; height: 34px;
+	border: 3px solid #2db400;
+	background: white;
+    }
+    .input_text { 
+    	width: 90%; height: 21px;
+    	border: 0;
+    	line-height: 21px;
+    	font-weight: bold;
+    	font-size: 14px;
+    	outline: none;
+        margin : 2px 5px 2px 5px;
+    }
+    .sch_smit {
+    	width: 54px; height: 40px;
+    	margin: 0; border: 0;
+    	vertical-align: top;
+    	background: #22B600;
+    	color: white;
+    	font-weight: bold;
+    	border-radius: 1px;
+    	cursor: pointer;
+    }
+    .sch_smit:hover { 
+    	background: #56C82C;
+    }
+  
