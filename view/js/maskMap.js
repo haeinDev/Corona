@@ -23,17 +23,18 @@
             $.ajax({
                 url: Dataurl,
                 dataType: "json",
+                type: 'GET',
                 success: function (data) {
                     for (var i = 0; i < data.count; i++) {
-                        //console.log('result.stores['+i+'].addr : ' + result.stores[i].addr);
-                        //console.log('result.stores['+i+'].code : ' + result.stores[i].code);
-                        //console.log('result.stores['+i+'].created_at : ' + result.stores[i].created_at);
-                        //console.log('result.stores['+i+'].latitude : ' + result.stores[i].latitude);
-                        //console.log('result.stores['+i+'].longitude : ' + result.stores[i].longitude);
-                        //console.log('result.stores['+i+'].name : ' + result.stores[i].name);
-                        //console.log('result.stores['+i+'].remain_stat : ' + result.stores[i].remain_stat);
-                        //console.log('result.stores['+i+'].stock_at : ' + result.stores[i].stock_at);
-                        //console.log('result.stores['+i+'].type : ' + result.stores[i].type);
+                        //console.log('data.stores['+i+'].addr : ' + data.stores[i].addr);
+                        //console.log('data.stores['+i+'].code : ' + data.stores[i].code);
+                        //console.log('data.stores['+i+'].created_at : ' + data.stores[i].created_at);
+                        //console.log('data.stores['+i+'].latitude : ' + data.stores[i].latitude);
+                        //console.log('data.stores['+i+'].longitude : ' + data.stores[i].longitude);
+                        //console.log('data.stores['+i+'].name : ' + data.stores[i].name);
+                        //console.log('data.stores['+i+'].remain_stat : ' + data.stores[i].remain_stat);
+                        //console.log('data.stores['+i+'].stock_at : ' + data.stores[i].stock_at);
+                        //console.log('data.stores['+i+'].type : ' + data.stores[i].type);
 
                         var marker = new kakao.maps.Marker({
                             map: map,

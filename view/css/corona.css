@@ -1,14 +1,18 @@
 
-.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid
+	 #ccc;border-bottom:2px solid #ddd;float:left;}
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
-.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
-.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
-.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
-   
+.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;
+	border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;
+	background: #d95050 url(http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) 
+	no-repeat right 14px center;}
+.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;
+	font-size:14px;font-weight:bold;}
+.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;
+	height:12px;background:url('http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+	   
     html, body {height:100%; width:100%; padding:0px; margin:0px;  position: fixed; overflow: hidden;}
-	div.map{
 	
-	}
 	div.absolute { 
         position: absolute;
         top : 90%;
@@ -18,7 +22,6 @@
 		z-index:6;
         opacity: 0.9;
 	}
-
     .yellow_search {
 	display: inline-block;
 	width: 45%; height:34px;
@@ -53,10 +56,7 @@
     	background: #fac30d;
     }
   
-
 	/* side css */
-
-
 	.sidebar {
 		height: 100%;
 		width: 0;
@@ -125,9 +125,21 @@
 		padding: 10px 15px;
 		border: none;
 	  }
-	  
-	  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	  /* https://www.w3schools.com/css/css3_mediaqueries_ex.asp */
+	  /* On smaller screens, where height is less than 450px, 
+	  change the style of the sidenav (less padding and a smaller font size) */
 	  @media screen and (max-height: 450px) {
 		.sidebar {padding-top: 15px;}
 		.sidebar a {font-size: 18px;}
 	  }
+	  #search_text { width: 200px; }
+	  
+		#th1 {
+			display: none;
+		}
+		#th2 {
+		display: none;
+		}
+		#th3 {
+		display: none;
+		}

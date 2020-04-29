@@ -8,6 +8,8 @@
 <link href="css/corona.css" rel="stylesheet">
 <script src="js/maskMap.js"></script>
 <script src="js/stock.js"></script>
+<script src="js/openNav.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
 <body>
@@ -23,7 +25,28 @@
         <div id =sidewindow>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-              </div>
+                
+               
+                    <p>Find the store and check their stock</p>
+                  <input type="text" id="search_text" value="" 
+                  laceholder="ex) Seoul Gangnam-gu">
+                  <!-- onKeypress="javascript:if(event.keyCode==13) {search_btn.click()}"p -->
+                  <button id="search_btn"  >Search</button>
+                  <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="th1">Stock status</th>
+                                <th id="th2">Pharmacy</th>
+                                <th id="th3">Address</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mask_list">
+                        </tbody>
+                    </table>
+                </div>
+        
+             </div>
               
               <div id="sideMenu">
                 <button class="openbtn" onclick="openNav()">List of mask stock status</button>  
