@@ -1,0 +1,56 @@
+
+# Corona virus RESTful API
+
+The government has implemented a five-part system to meet the surging demand for masks 
+due to the recent coronavirus, making it difficult for general online/offline retailers 
+to purchase masks.
+
+Using this API, we are going to create a web page that can check the sales status of public masks 
+in a specific region. With the introduction of the e-government system, 
+data on various fields has been shared for several years.
+However, the public mask sales information that we have started to display provides information 
+in a different manner than how it has been displayed previously. 
+In the past, we used the Open API through individual authentication key after requesting utilization.
+ We are now receiving JSON data right away with the Rest API URL address without 
+ such an individual authentication key.
+
+Considering the seriousness of the current situation, 
+I think this is to minimize the intermediate process for rapid development and give opportunities to those in need.
+
+## Regarding the data use
+Disclaimer 
+I am entitled to use any and all data included in this project as per the Public Data Utilization Policy of the data source 
+"PUT THE SOURCE OF THE DATA HERE" as per Article 1, 3 of the Public Data Act.
+Public data provided by the public data portal is available to anyone according to the Public Data Act, 
+and free utilization including the use of profit-making purposes is guaranteed.
+
+
+### Prerequisites
+
+Install 'live server' in visual studio code.
+Right click in index.html and click "open with live server"
+
+## Running the tests
+
+I have attached the list of cities in korean that you can use for testing 
+
+Heroku link - only list service available https://corona-2017133.herokuapp.com/
+
+## Authors
+
+Haein Kim (https://github.com/haeinjane/Corona/commits/master)
+
+
+## License
+
+This project is licensed under the MIT License 
+
+## References ** All code is referred to these References
+
+Apis.map.kakao.com. 2020. Kakao 지도 API. [online] Available at: <https://apis.map.kakao.com/web/documentation/> [Accessed 29 April 2020].
+
+Apis.map.kakao.com. 2020. Kakao 지도 API. [online] Available at: <https://apis.map.kakao.com/web/sample/> [Accessed 30 April 2020].
+
+Data.go.kr. 2020. 공공데이터 포털. [online] Available at: <https://www.data.go.kr/> [Accessed 30 April 2020].
+
+W3schools.com. 2020. CSS3 Media Queries - Examples. [online] Available at: <https://www.w3schools.com/css/css3_mediaqueries_ex.asp> [Accessed 30 April 2020].
