@@ -101,7 +101,7 @@
 		border: none;
 		position: absolute;
 		left: -235px;
-		top: -560px;
+		top: -550px;
 		height: 100%;
 	  }
 	  
@@ -109,7 +109,7 @@
 		background-color: #555;
 		position: absolute;
 		left: -235px;
-		top: -560px;
+		top: -550px;
 		height: 100%;
 		
 	  }
@@ -131,4 +131,8 @@
 	  @media screen and (max-height: 450px) {
 		.sidebar {padding-top: 15px;}
 		.sidebar a {font-size: 18px;}
+	  }
+	  iframe{
+		border:none;
+		float:right
 	  }

@@ -3,31 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>corona</title>
+    <title>Corona mask map -2017133 Haein</title>
 </head>
 <link href="css/corona.css" rel="stylesheet">
 <script src="js/maskMap.js"></script>
+<script src="js/sideMenu.js"></script>
 <body>
     <div class="map" id="map" style="width:100%;height:100%;"></div>
     <div class="absolute">
         <span class='yellow_search'> 
-            <!-- //dd -->
+            <!--main search bar-->
+            <!-- you can search by area name or place name  -->
             <input type='text' class='input_text' id="inputaddress" placeholder="Find the stores"
                 onKeypress="javascript:if(event.keyCode==13) {searchMap('서울시 종로구')}" />
         </span>
-        <button type='submit' class='sch_smit' onclick="searchMap('종로구청')">Search</button>
+        <button type='submit' class='sch_smit' onclick="searchMap('종로5가역')">Search</button>
        <!-- side memu -->
         <div id =sidewindow>
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <iframe src="sideMenu.html" width="300" height="600" style="float:right"></iframe>
+                <iframe src="sideMenu.html" id="iframe" height="600"></iframe>
             </div>
               
               <div id="sideMenu">
                 <button class="openbtn" onclick="openNav()">List of mask stock status</button>  
               </div>
         </div>
-        
+
     </div>
 
     
@@ -37,6 +39,7 @@
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b59c27d2a1c9389ece9d237577a5214&libraries=services"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
+        
         // Map Option
         var map_Container = document.getElementById('map'),
             map_Option = {   //Jongno 5(o)-ga
