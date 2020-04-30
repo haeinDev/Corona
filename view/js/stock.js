@@ -1,28 +1,13 @@
 
-function openNav() {
-    document.getElementById("mySidebar").style.width = "300px";
-    document.getElementById("sideMenu").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("sideMenu").style.marginLeft= "0";
-  }
-    //Your entire JS code here
-    console.log("ddd");
-
 // get the Element from the view
 const search_text = document.getElementById("search_text");
 const search_btn = document.getElementById("search_btn");
 const mask_list = document.getElementById("mask_list");
-console.log(search_text);
 // make it work by pressing enter 
 search_text.addEventListener("keydown", function (event){
 
-//   // // console.log("ddd");
     if (event.keyCode === 13){
         search_btn.click();
-
     }
 });
 // action for click button
@@ -37,7 +22,6 @@ async function handleSearch(event){
     document.getElementById("th3").style.display = "none";
     // put the input value into address to search
     const address = search_text.value;
-    console.log(address);
     // runt the getDatas function and save the data into datas
     const datas = await getDatas(address);
     // rendering data 

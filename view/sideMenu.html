@@ -1,0 +1,36 @@
+
+<!-- side window  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mask store list</title>
+  
+  <link rel="stylesheet" href="css/sideMenu.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <p>Find the store and check their stock</p>
+  <input type="text" id="search_text" value="" placeholder="ex) Seoul Gangnam-gu">
+
+  <button id="search_btn" >Search</button>
+  <div>
+    <table>
+        <thead>
+            <tr>
+                <th id="th1">Stock status</th>
+                <th id="th2">Pharmacy</th>
+                <th id="th3">Address</th>
+            </tr>
+        </thead>
+        <tbody id="mask_list">
+        </tbody>
+    </table>
+
+</div>
+<script src="js/stock.js"></script>
+
+</body>
+</html>
+
