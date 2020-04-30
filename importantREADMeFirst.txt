@@ -12,3 +12,6 @@ I have attached the list written in Korean for testing purposes for you as this 
 Hope that's okay. Thanks and I am sorry for this inconvenience.
 
 Ps.I tested on chrome and IE 
+
+MY github address
+https://github.com/haeinjane/Corona/commits/master
